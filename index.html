@@ -1,60 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Tasty Bites Restaurant</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurum Dining | Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-page="home">
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html"><strong>Aurum Dining</strong><span>Luxury Culinary House</span></a>
+      <nav class="nav-links">
+        <a data-page="home" href="index.html">Home</a>
+        <a data-page="menu" href="menu.html">Menu</a>
+        <a data-page="products" href="products.html">Products</a>
+        <a data-page="order" href="order.html">Order</a>
+        <a data-page="cart" class="cart-pill" href="cart.html">Cart <span class="cart-count">0</span></a>
+        <a data-page="about" href="about.html">About Us</a>
+        <a data-page="contact" href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
 
-<header>
-    <h1>🍴 Tasty Bites</h1>
-    <p>Delicious Food | Great Ambience</p>
-</header>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <article class="card hero-main">
+          <h1>Where elegant ambience meets world-class cuisine.</h1>
+          <p>
+            Aurum Dining delivers curated tasting experiences, signature plating and premium hospitality.
+            Reserve, order, and explore a complete fine-dining digital journey.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="order.html">Start Your Order</a>
+            <a class="btn btn-secondary" href="menu.html">Browse Menu</a>
+          </div>
+        </article>
+        <div class="metric-grid">
+          <article class="card metric"><h3>4.9/5</h3><p>Average Guest Rating</p></article>
+          <article class="card metric"><h3>50K+</h3><p>Successful Gourmet Orders</p></article>
+          <article class="card metric"><h3>15</h3><p>International Culinary Awards</p></article>
+          <article class="card metric"><h3>24×7</h3><p>Concierge Support & Chatbot</p></article>
+        </div>
+      </div>
+    </section>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#menu">Menu</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <section class="section">
+      <div class="section-title">
+        <h2>Featured Signatures</h2>
+        <p>Handpicked for today’s premium table.</p>
+      </div>
+      <div class="grid" id="featuredProducts"></div>
+    </section>
 
-<section class="hero">
-    <h2>Welcome to Tasty Bites</h2>
-    <p>Fresh • Hygienic • Tasty</p>
-</section>
+    <section class="section split">
+      <article class="card" style="padding:1rem;">
+        <div class="section-title"><h2>Premium Experience</h2></div>
+        <p class="muted">Fine interiors, live kitchen theatre, sommelier pairing, private dining lounges and tailored event hosting.</p>
+        <ul class="muted">
+          <li>Luxury tasting menu (7-course and 10-course)</li>
+          <li>Chef’s table with seasonal storytelling plates</li>
+          <li>Express delivery with temperature-safe packaging</li>
+        </ul>
+      </article>
+      <article class="card" style="padding:1rem;">
+        <div class="section-title"><h2>Stay Updated</h2></div>
+        <form id="newsletterForm" class="form">
+          <label for="newsletterEmail">Email</label>
+          <input id="newsletterEmail" type="email" required placeholder="you@example.com" />
+          <button class="btn btn-primary" type="submit">Join Culinary Circle</button>
+        </form>
+        <p id="newsletterNotice" class="notice" hidden>Thank you for subscribing. You’ll receive curated offers and chef updates.</p>
+      </article>
+    </section>
+  </main>
 
-<section id="menu">
-    <h2>Our Menu</h2>
-    <ul>
-        <li>🍕 Pizza – ₹299</li>
-        <li>🍔 Burger – ₹149</li>
-        <li>🍝 Pasta – ₹199</li>
-        <li>🍛 Biryani – ₹249</li>
-        <li>🥤 Cold Drink – ₹79</li>
-    </ul>
-</section>
+  <footer>
+    <div class="container footer-wrap">
+      <span>© 2026 Aurum Dining. All rights reserved.</span>
+      <span>Contributer Rishav | Erro_rcodee</span>
+    </div>
+  </footer>
 
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-        Tasty Bites is a family restaurant offering delicious meals
-        made from fresh ingredients. Customer satisfaction is our
-        top priority.
-    </p>
-</section>
-
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>📍 Kolkata, India</p>
-    <p>📞 +91 9876543210</p>
-    <p>📧 tastybites@email.com</p>
-</section>
-
-<footer>
-    <p>© 2026 Tasty Bites Restaurant</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>

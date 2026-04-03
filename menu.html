@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurum Dining | Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="menu">
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html"><strong>Aurum Dining</strong><span>Luxury Culinary House</span></a>
+      <nav class="nav-links">
+        <a data-page="home" href="index.html">Home</a>
+        <a data-page="menu" href="menu.html">Menu</a>
+        <a data-page="products" href="products.html">Products</a>
+        <a data-page="order" href="order.html">Order</a>
+        <a data-page="cart" class="cart-pill" href="cart.html">Cart <span class="cart-count">0</span></a>
+        <a data-page="about" href="about.html">About Us</a>
+        <a data-page="contact" href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="section-title">
+      <h2>Complete Menu</h2>
+      <p>Curated categories and premium pricing.</p>
+    </div>
+    <article class="card" style="padding:1rem; overflow:auto;">
+      <table class="table">
+        <thead>
+          <tr><th>Dish</th><th>Category</th><th>Price</th><th>Action</th></tr>
+        </thead>
+        <tbody id="menuTableBody"></tbody>
+      </table>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <span>© 2026 Aurum Dining. All rights reserved.</span>
+      <span>Contributer Rishav | Erro_rcodee</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

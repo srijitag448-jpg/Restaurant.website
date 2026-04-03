@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurum Dining | Order</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="order">
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html"><strong>Aurum Dining</strong><span>Luxury Culinary House</span></a>
+      <nav class="nav-links">
+        <a data-page="home" href="index.html">Home</a>
+        <a data-page="menu" href="menu.html">Menu</a>
+        <a data-page="products" href="products.html">Products</a>
+        <a data-page="order" href="order.html">Order</a>
+        <a data-page="cart" class="cart-pill" href="cart.html">Cart <span class="cart-count">0</span></a>
+        <a data-page="about" href="about.html">About Us</a>
+        <a data-page="contact" href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section split">
+    <article class="card" style="padding:1rem;">
+      <div class="section-title"><h2>Place an Order</h2></div>
+      <form id="orderForm" class="form">
+        <label for="orderName">Customer Name</label>
+        <input id="orderName" type="text" required placeholder="Enter full name" />
+
+        <label for="orderPhone">Phone</label>
+        <input id="orderPhone" type="tel" required placeholder="Enter mobile number" />
+
+        <label for="orderProduct">Dish</label>
+        <select id="orderProduct"></select>
+
+        <label for="orderQty">Quantity</label>
+        <input id="orderQty" type="number" min="1" value="1" required />
+
+        <label for="orderAddress">Delivery Address</label>
+        <textarea id="orderAddress" required placeholder="Enter full address"></textarea>
+
+        <p class="muted">Estimated line total: <strong id="orderTotal">₹0</strong></p>
+        <button class="btn btn-primary" type="submit">Add to Cart</button>
+      </form>
+      <p id="orderNotice" class="notice" hidden></p>
+    </article>
+
+    <article class="card" style="padding:1rem;">
+      <div class="section-title"><h2>Ordering Promise</h2></div>
+      <ul class="muted">
+        <li>Live order confirmation via SMS/phone within minutes.</li>
+        <li>Hygienic, chef-sealed packaging for every order.</li>
+        <li>Careful transit handling for premium plating quality.</li>
+        <li>Dedicated concierge for special dietary instructions.</li>
+      </ul>
+      <a class="btn btn-secondary" href="cart.html">Go to Cart</a>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <span>© 2026 Aurum Dining. All rights reserved.</span>
+      <span>Contributer Rishav | Erro_rcodee</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
