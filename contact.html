@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurum Dining | Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="contact">
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html"><strong>Aurum Dining</strong><span>Luxury Culinary House</span></a>
+      <nav class="nav-links">
+        <a data-page="home" href="index.html">Home</a>
+        <a data-page="menu" href="menu.html">Menu</a>
+        <a data-page="products" href="products.html">Products</a>
+        <a data-page="order" href="order.html">Order</a>
+        <a data-page="cart" class="cart-pill" href="cart.html">Cart <span class="cart-count">0</span></a>
+        <a data-page="about" href="about.html">About Us</a>
+        <a data-page="contact" href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section split">
+    <article class="card" style="padding:1rem;">
+      <div class="section-title"><h2>Contact & Reservations</h2></div>
+      <p class="muted">Address: 22 Imperial Avenue, Kolkata, India</p>
+      <p class="muted">Phone: +91 98765 43210</p>
+      <p class="muted">Email: reservations@aurumdining.com</p>
+      <p class="muted">Dining Hours: 12:00 PM – 11:30 PM (Daily)</p>
+      <p class="muted">Delivery Hours: 11:00 AM – 11:30 PM</p>
+    </article>
+
+    <article class="card" style="padding:1rem;">
+      <div class="section-title"><h2>Send an Enquiry</h2></div>
+      <form id="contactForm" class="form">
+        <label for="name">Name</label>
+        <input id="name" type="text" required placeholder="Your name" />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required placeholder="you@example.com" />
+
+        <label for="subject">Subject</label>
+        <input id="subject" type="text" required placeholder="Reservation / Event / Catering" />
+
+        <label for="message">Message</label>
+        <textarea id="message" required placeholder="Share your requirement"></textarea>
+
+        <button class="btn btn-primary" type="submit">Submit Enquiry</button>
+      </form>
+      <p id="contactNotice" class="notice" hidden>Thank you. Our concierge team will contact you shortly.</p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <span>© 2026 Aurum Dining. All rights reserved.</span>
+      <span>Contributer Rishav | Erro_rcodee</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

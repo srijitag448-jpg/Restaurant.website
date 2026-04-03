@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurum Dining | Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="cart">
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html"><strong>Aurum Dining</strong><span>Luxury Culinary House</span></a>
+      <nav class="nav-links">
+        <a data-page="home" href="index.html">Home</a>
+        <a data-page="menu" href="menu.html">Menu</a>
+        <a data-page="products" href="products.html">Products</a>
+        <a data-page="order" href="order.html">Order</a>
+        <a data-page="cart" class="cart-pill" href="cart.html">Cart <span class="cart-count">0</span></a>
+        <a data-page="about" href="about.html">About Us</a>
+        <a data-page="contact" href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section split">
+    <article class="card" style="padding:1rem; overflow:auto;">
+      <div class="section-title"><h2>Your Cart</h2></div>
+      <p id="cartEmpty" class="muted" hidden>Your cart is empty. Add premium dishes to continue.</p>
+      <table class="table">
+        <thead>
+          <tr><th>Dish</th><th>Price</th><th>Qty</th><th>Total</th><th>Action</th></tr>
+        </thead>
+        <tbody id="cartBody"></tbody>
+      </table>
+      <div class="cta-row" style="margin-top:1rem;">
+        <button class="btn btn-secondary" id="clearCart">Clear Cart</button>
+        <a class="btn btn-primary" href="contact.html">Proceed to Confirmation</a>
+      </div>
+    </article>
+
+    <article class="card" style="padding:1rem;">
+      <div class="section-title"><h2>Bill Summary</h2></div>
+      <p class="muted">Subtotal: <strong id="cartSubtotal">₹0</strong></p>
+      <p class="muted">GST (5%): <strong id="cartTax">₹0</strong></p>
+      <p class="muted">Grand Total: <strong id="cartFinal">₹0</strong></p>
+      <p class="notice">Checkout assistance available through chatbot for combo guidance and event-sized orders.</p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <span>© 2026 Aurum Dining. All rights reserved.</span>
+      <span>Contributer Rishav | Erro_rcodee</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
